@@ -1,0 +1,25 @@
+{
+  "name": "back-gpt",
+  "version": "1.0.0",
+  "description": "Rest API for Gemini API",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "João Niches",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
