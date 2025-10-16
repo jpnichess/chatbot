@@ -74,7 +74,7 @@ app.post("/stream-chat", async (req, res) => {
     // Cria o chat com o histórico anterior
     const chat = model.startChat({
       history,
-      generationConfig: { maxOutputTokens: 300 }, // Limite de tamanho da resposta
+      generationConfig: { maxOutputTokens: 500 }, // Limite de tamanho da resposta
     });
 
     // Salva a nova mensagem do usuário no Firestore
@@ -175,7 +175,7 @@ app.get("/history/:sessionId", async (req, res) => {
 
 /* ============================================================
    ROTA: /history-detail/:conversationId
-   - Retorna o detalhamento de uma conversa específica
+   - Retorna o detalhamento de conversas
    ============================================================ */
 app.get("/history-detail/:conversationId", async (req, res) => {
   try {
